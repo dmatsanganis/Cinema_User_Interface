@@ -54,4 +54,4 @@ C:\Users\Dimitris\source\repos\Cinema\Cinema\obj\Debug\Cinema.Vacuum_Cleaner_Los
 C:\Users\Dimitris\source\repos\Cinema\Cinema\obj\Debug\Cinema.Vacuum_Cleaner_Set_CleanUp.resources
 C:\Users\Dimitris\source\repos\Cinema\Cinema\obj\Debug\Cinema.Waiting_Room_OffLights.resources
 C:\Users\Dimitris\source\repos\Cinema\Cinema\obj\Debug\Cinema.Restaurant_OffLights.resources
-C:\Users\Dimitris\source\repos\Cinema\Cinema\obj\Debug\Cinema.Tickets_OffLights.resources
+C:\Users\Dimitris\source\repos\Cinema\Cinema\obj\Debug\Cinema.Tickets_OffLights.resource
