@@ -1,0 +1,5 @@
+Name : Mario  Score : 430
+Name : Nikos  Score : 245
+Name : Pavlos  Score : 120
+Name : Lambros  Score : 70
+Name : Yao Lin  Score : 30
