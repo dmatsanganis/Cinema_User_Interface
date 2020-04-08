@@ -1,5 +1,5 @@
 # Cinema_User_Interface
-An Extended Cinema Compact written in C# Programmong language.  
+An Extended Cinema Compact written in C# Programming language.  
 The Cinema UI App includes;
 1.An online food application.
 2.A guidance to Cinema's Halls, from Cinema's Owner and Chief Operaton Yao Lin.
