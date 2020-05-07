@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E56D3C0-76DB-470F-B551-5EA44F03717C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cinema</RootNamespace>
+    <AssemblyName>Cinema</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book_Tickets_Date_and_Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Tickets_Date_and_Time.Designer.cs">
+      <DependentUpon>Book_Tickets_Date_and_Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Tickets_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Tickets_Main.Designer.cs">
+      <DependentUpon>Book_Tickets_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinema_Rooms_Hall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinema_Rooms_Hall.Designer.cs">
+      <DependentUpon>Cinema_Rooms_Hall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinema_Room_Beijing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinema_Room_Beijing.Designer.cs">
+      <DependentUpon>Cinema_Room_Beijing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinema_Room_Shanghai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinema_Room_Shanghai.Designer.cs">
+      <DependentUpon>Cinema_Room_Shanghai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinema_Room_YaoHall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinema_Room_YaoHall.Designer.cs">
+      <DependentUpon>Cinema_Room_YaoHall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CleanUp_Completed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CleanUp_Completed.Designer.cs">
+      <DependentUpon>CleanUp_Completed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client_Main.Designer.cs">
+      <DependentUpon>Client_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditCard.Designer.cs">
+      <DependentUpon>CreditCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreditCard_Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreditCard_Tickets.Designer.cs">
+      <DependentUpon>CreditCard_Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employer_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employer_Main.Designer.cs">
+      <DependentUpon>Employer_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Food_Payment.Designer.cs">
+      <DependentUpon>Food_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lights_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lights_Management.Designer.cs">
+      <DependentUpon>Lights_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lights_Management_Card_Explain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lights_Management_Card_Explain.Designer.cs">
+      <DependentUpon>Lights_Management_Card_Explain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in.Designer.cs">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_in_Employers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in_Employers.Designer.cs">
+      <DependentUpon>Log_in_Employers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_ Sonic the Hedgehog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie_ Sonic the Hedgehog.Designer.cs">
+      <DependentUpon>Movie_ Sonic the Hedgehog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_Apollo11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie_Apollo11.Designer.cs">
+      <DependentUpon>Movie_Apollo11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_The_Irishman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movie_The_Irishman.Designer.cs">
+      <DependentUpon>Movie_The_Irishman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Completed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_Completed.Designer.cs">
+      <DependentUpon>Payment_Completed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Completed_Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_Completed_Tickets.Designer.cs">
+      <DependentUpon>Payment_Completed_Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paypal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paypal.Designer.cs">
+      <DependentUpon>Paypal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paypal_Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paypal_Tickets.Designer.cs">
+      <DependentUpon>Paypal_Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant.Designer.cs">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant_OffLights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant_OffLights.Designer.cs">
+      <DependentUpon>Restaurant_OffLights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seats_Selection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seats_Selection.Designer.cs">
+      <DependentUpon>Seats_Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Second_Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Second_Main_Form.Designer.cs">
+      <DependentUpon>Second_Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperMario_Arcade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperMario_Arcade.Designer.cs">
+      <DependentUpon>SuperMario_Arcade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets.Designer.cs">
+      <DependentUpon>Tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets_OffLights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets_OffLights.Designer.cs">
+      <DependentUpon>Tickets_OffLights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets_Payment.Designer.cs">
+      <DependentUpon>Tickets_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Bad_Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Bad_Customers.Designer.cs">
+      <DependentUpon>Vacuum_Cleaner_Bad_Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Charger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Charger.Designer.cs">
+      <DependentUpon>Vacuum_Cleaner_Charger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Emptying.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Emptying.Designer.cs">
+      <DependentUpon>Vacuum_Cleaner_Emptying.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Lost_And_Found_Office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Lost_And_Found_Office.Designer.cs">
+      <DependentUpon>Vacuum_Cleaner_Lost_And_Found_Office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Main.Designer.cs">
+      <DependentUpon>Vacuum_Cleaner_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Set_CleanUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vacuum_Cleaner_Set_CleanUp.Designer.cs">
+      <DependentUpon>Vacuum_Cleaner_Set_CleanUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Waiting_Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Waiting_Room.Designer.cs">
+      <DependentUpon>Waiting_Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Waiting_Room_OffLights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Waiting_Room_OffLights.Designer.cs">
+      <DependentUpon>Waiting_Room_OffLights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yao%27s_Food_App.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yao%27s_Food_App.Designer.cs">
+      <DependentUpon>Yao%27s_Food_App.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yao%27s_Insta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yao%27s_Insta.Designer.cs">
+      <DependentUpon>Yao%27s_Insta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Book_Tickets_Date_and_Time.resx">
+      <DependentUpon>Book_Tickets_Date_and_Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Tickets_Main.resx">
+      <DependentUpon>Book_Tickets_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema_Rooms_Hall.resx">
+      <DependentUpon>Cinema_Rooms_Hall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema_Room_Beijing.resx">
+      <DependentUpon>Cinema_Room_Beijing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema_Room_Shanghai.resx">
+      <DependentUpon>Cinema_Room_Shanghai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinema_Room_YaoHall.resx">
+      <DependentUpon>Cinema_Room_YaoHall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CleanUp_Completed.resx">
+      <DependentUpon>CleanUp_Completed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client_Main.resx">
+      <DependentUpon>Client_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditCard.resx">
+      <DependentUpon>CreditCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditCard_Tickets.resx">
+      <DependentUpon>CreditCard_Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employer_Main.resx">
+      <DependentUpon>Employer_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food_Payment.resx">
+      <DependentUpon>Food_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lights_Management.resx">
+      <DependentUpon>Lights_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lights_Management_Card_Explain.resx">
+      <DependentUpon>Lights_Management_Card_Explain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in.resx">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in_Employers.resx">
+      <DependentUpon>Log_in_Employers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie_ Sonic the Hedgehog.resx">
+      <DependentUpon>Movie_ Sonic the Hedgehog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie_Apollo11.resx">
+      <DependentUpon>Movie_Apollo11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie_The_Irishman.resx">
+      <DependentUpon>Movie_The_Irishman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Completed.resx">
+      <DependentUpon>Payment_Completed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Completed_Tickets.resx">
+      <DependentUpon>Payment_Completed_Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paypal.resx">
+      <DependentUpon>Paypal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paypal_Tickets.resx">
+      <DependentUpon>Paypal_Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant.resx">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant_OffLights.resx">
+      <DependentUpon>Restaurant_OffLights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seats_Selection.resx">
+      <DependentUpon>Seats_Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Second_Main_Form.resx">
+      <DependentUpon>Second_Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperMario_Arcade.resx">
+      <DependentUpon>SuperMario_Arcade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets.resx">
+      <DependentUpon>Tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets_OffLights.resx">
+      <DependentUpon>Tickets_OffLights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets_Payment.resx">
+      <DependentUpon>Tickets_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacuum_Cleaner_Bad_Customers.resx">
+      <DependentUpon>Vacuum_Cleaner_Bad_Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacuum_Cleaner_Charger.resx">
+      <DependentUpon>Vacuum_Cleaner_Charger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacuum_Cleaner_Emptying.resx">
+      <DependentUpon>Vacuum_Cleaner_Emptying.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacuum_Cleaner_Lost_And_Found_Office.resx">
+      <DependentUpon>Vacuum_Cleaner_Lost_And_Found_Office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacuum_Cleaner_Main.resx">
+      <DependentUpon>Vacuum_Cleaner_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vacuum_Cleaner_Set_CleanUp.resx">
+      <DependentUpon>Vacuum_Cleaner_Set_CleanUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waiting_Room.resx">
+      <DependentUpon>Waiting_Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Waiting_Room_OffLights.resx">
+      <DependentUpon>Waiting_Room_OffLights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yao%27s_Food_App.resx">
+      <DependentUpon>Yao%27s_Food_App.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yao%27s_Insta.resx">
+      <DependentUpon>Yao%27s_Insta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiting2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drinks_menu .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meals_menu_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popcorns.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Burger.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Club.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chinese.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yao%27s_Pizza.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insta_Yao.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insta_Yao1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_small1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Second_Main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Second_Main1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_btn_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_main_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kissclipart-angle-clipart-desktop-wallpaper-text-messaging-cli-5e9bb66180bf233d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tickets.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cafeteria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yao%27s_Dog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog_messagebox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Super_Mario_Background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bowser_right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mario_and_Luigi_down_gif1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\super_mario_run1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Super_Mario1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mario_luigi_left1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\super_mario_picturebox1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause_button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_coca_cola.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_coca_cola_zero.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_fanta.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_sprite.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_water.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proceed_to_payments.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_remove_one.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_remove_all.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_creditcards.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_paypal.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_payment_completed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yao_Face.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yao_face_zoom.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema_Employers_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Webp.net-resizeimage %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tickets_Yao_logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lights_Management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lights_Management_Card.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lights_Management_Controller.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tickets_off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movies_Apollo11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movies_Sonic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movies_The_Irishman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movies_Apollo11_cast.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movies_Apollo11_plot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie_Sonic_cast.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie_Sonic_plot.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie_The_Irishman_cast.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie_The_Irishman_plot.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema_Hallway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema_Room_Beijing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema_Room_Shanghai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema_Room_YaoHall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tickets_proceed.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tickets_proceed1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Employers_Main_Pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yao 457.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vacuum_cleaner_room2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lost_and_found_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lost_and_found_worker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bad_customers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lost_and_found_image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restaurant_off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tickets_off1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiting_room_off.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lights_Management_Controller1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertedcard.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AcradeMachine_SuperMario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online_info_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online_info_button1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lights_Management_Controller2.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
