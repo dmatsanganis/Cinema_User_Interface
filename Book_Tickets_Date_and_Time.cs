@@ -92,6 +92,7 @@ namespace Cinema
             }
             string date = dateTimePicker1.Value.ToString("dd - MM - yyyy");
             string timerooms = comboBox1.Text;
+
         }
 
         private void Button12_Click(object sender, EventArgs e)
