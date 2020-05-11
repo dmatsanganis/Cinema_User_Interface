@@ -24,11 +24,5 @@ namespace Cinema
             form1.Show();
             this.Hide();
         }
-
-        private void Online_info_button_Click(object sender, EventArgs e)
-        {
-            DialogResult dialogResult = MessageBox.Show("This is Shanghai Cinema Room.\nClick on the back button to return to the Hallway.", "Online Help", MessageBoxButtons.OK);
-            //Online Helper MessageBox's message.
-        }
     }
 }
