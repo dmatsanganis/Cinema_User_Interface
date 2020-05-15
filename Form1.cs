@@ -19,6 +19,7 @@ namespace Cinema
             form1.Show();
             this.Hide();
         }
+        
 
         private void Online_info_button_Click(object sender, System.EventArgs e)
         {
