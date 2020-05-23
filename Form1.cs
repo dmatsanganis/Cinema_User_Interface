@@ -10,6 +10,7 @@ namespace Cinema
             InitializeComponent();
 
         }
+      
 
         private void PictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
