@@ -51,7 +51,7 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
-            // Welcome_Message.
+            // Welcome_Message
             // 
             this.Welcome_Message.AutoSize = true;
             this.Welcome_Message.BackColor = System.Drawing.Color.White;
