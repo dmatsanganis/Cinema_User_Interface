@@ -1,4 +1,3 @@
-
 namespace Cinema
 {
     partial class Log_in_Employers
