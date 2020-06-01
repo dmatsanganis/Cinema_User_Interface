@@ -1,4 +1,3 @@
-
 namespace Cinema
 {
     partial class Movie__Sonic_the_Hedgehog
